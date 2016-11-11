@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>currency Module &#8212; ForgeryPy 0.2 documentation</title>
+    <title>email Module &#8212; ForgeryPy 0.2 documentation</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="ForgeryPy 0.2 documentation" href="index.html" />
-    <link rel="next" title="date Module" href="date.html" />
-    <link rel="prev" title="credit_card Module" href="credit_card.html" /> 
+    <link rel="next" title="geo Module" href="geo.html" />
+    <link rel="prev" title="date Module" href="date.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -40,10 +40,10 @@
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="date.html" title="date Module"
+          <a href="geo.html" title="geo Module"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="credit_card.html" title="credit_card Module"
+          <a href="date.html" title="date Module"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">ForgeryPy 0.2 documentation</a> &#187;</li> 
       </ul>
@@ -54,19 +54,24 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="module-forgery_py.forgery.currency">
-<span id="currency-module"></span><h1><code class="xref py py-mod docutils literal"><span class="pre">currency</span></code> Module<a class="headerlink" href="#module-forgery_py.forgery.currency" title="Permalink to this headline">¶</a></h1>
-<p>Generate currency-related data.</p>
+  <div class="section" id="module-forgery_py.forgery.email">
+<span id="email-module"></span><h1><code class="xref py py-mod docutils literal"><span class="pre">email</span></code> Module<a class="headerlink" href="#module-forgery_py.forgery.email" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
-<dt id="forgery_py.forgery.currency.description">
-<code class="descclassname">forgery_py.forgery.currency.</code><code class="descname">description</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/forgery_py/forgery/currency.html#description"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forgery_py.forgery.currency.description" title="Permalink to this definition">¶</a></dt>
-<dd><p>Random currency description, e.g. <cite>United Kingdom Pounds</cite>.</p>
+<dt id="forgery_py.forgery.email.address">
+<code class="descclassname">forgery_py.forgery.email.</code><code class="descname">address</code><span class="sig-paren">(</span><em>user=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/forgery_py/forgery/email.html#address"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forgery_py.forgery.email.address" title="Permalink to this definition">¶</a></dt>
+<dd><p>An alias for internet.email_address(user).</p>
 </dd></dl>
 
 <dl class="function">
-<dt id="forgery_py.forgery.currency.code">
-<code class="descclassname">forgery_py.forgery.currency.</code><code class="descname">code</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/forgery_py/forgery/currency.html#code"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forgery_py.forgery.currency.code" title="Permalink to this definition">¶</a></dt>
-<dd><p>Random currency code, e.g. <cite>GBP</cite>.</p>
+<dt id="forgery_py.forgery.email.body">
+<code class="descclassname">forgery_py.forgery.email.</code><code class="descname">body</code><span class="sig-paren">(</span><em>quantity=2</em>, <em>separator='\n\n'</em>, <em>wrap_start=''</em>, <em>wrap_end=''</em>, <em>html=False</em>, <em>sentences_quantity=3</em>, <em>as_list=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/forgery_py/forgery/email.html#body"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forgery_py.forgery.email.body" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return random email text.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="forgery_py.forgery.email.subject">
+<code class="descclassname">forgery_py.forgery.email.</code><code class="descname">subject</code><span class="sig-paren">(</span><em>words_quantity=4</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/forgery_py/forgery/email.html#subject"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forgery_py.forgery.email.subject" title="Permalink to this definition">¶</a></dt>
+<dd><p>An alias for lorem_ipsum.title(words_quantity)</p>
 </dd></dl>
 
 </div>
@@ -78,15 +83,15 @@
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="credit_card.html"
-                        title="previous chapter"><code class="docutils literal"><span class="pre">credit_card</span></code> Module</a></p>
-  <h4>Next topic</h4>
   <p class="topless"><a href="date.html"
-                        title="next chapter"><code class="docutils literal"><span class="pre">date</span></code> Module</a></p>
+                        title="previous chapter"><code class="docutils literal"><span class="pre">date</span></code> Module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="geo.html"
+                        title="next chapter"><code class="docutils literal"><span class="pre">geo</span></code> Module</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/currency.txt"
+      <li><a href="_sources/email.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -114,10 +119,10 @@
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="date.html" title="date Module"
+          <a href="geo.html" title="geo Module"
              >next</a> |</li>
         <li class="right" >
-          <a href="credit_card.html" title="credit_card Module"
+          <a href="date.html" title="date Module"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">ForgeryPy 0.2 documentation</a> &#187;</li> 
       </ul>
